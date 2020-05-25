@@ -5,9 +5,18 @@
 * 🚀本仓库是 `Go Mod` 的相关官方文档翻译。
 * 👏欢迎任何人加入翻译的工作。
 
-# 目录
+Go 自从 1.11 版本以来就包含了对版本化模块(versioned modules)的支持（[链接](https://golang.org/design/24301-versioned-go)）。最初的原型`vgo`是在2018年2月发布的，2018年7月，版本化模块正式登陆Go的主分支。
 
-## 介绍 ([Introduction](https://blog.golang.org/using-go-modules))
+
+## 更新日志
+
+### Go 1.14
+
+### Go 1.13
+
+## 目录
+
+### 介绍 ([Introduction](https://blog.golang.org/using-go-modules))
 
 该系列文章官方发布于 `2019年3月19日` 。
 
@@ -18,7 +27,7 @@
 - [x] 第三部分 — 发布 Go Modules | [翻译](https://studygolang.com/articles/25129) / [原文](https://blog.golang.org/publishing-go-modules)
 - [x] 第四部分 — Go Modules: v2 和未来 | [翻译](https://studygolang.com/articles/25130) / [原文](https://blog.golang.org/v2-go-modules)
 
-## 文档 ([GitHub Wiki](https://github.com/golang/go/wiki/Modules))
+### 文档 ([GitHub Wiki](https://github.com/golang/go/wiki/Modules))
 
 - [ ] 快速上手
 - [ ] 新概念
