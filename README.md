@@ -4,6 +4,7 @@
 
 * 🚀本仓库是 `Go Mod` 的相关官方文档翻译。
 * 👏欢迎任何人加入翻译的工作。
+* 🌟你的star就是我的动力。
 
 Go 自从 1.11 版本以来就包含了对版本化模块 (versioned modules) 的[支持](https://golang.org/design/24301-versioned-go)。最初的原型`vgo`是在2018年2月发布的，2018年7月，版本化模块正式登陆Go的主分支。
 
@@ -120,7 +121,7 @@ require rsc.io/quote v1.5.2
 
 - 在你的`.go`代码中根据需要添加`import`声明；
 - 一些标准的命令例如`go build`或`go test`会自动添加新的依赖包以此来满足`imports`的需要（自动更新`go.mod`文件并且下载新的依赖包）；
-- 如果需要的话，可以在`go get`命令或在编辑`go.mod`文件的时候指明版本号，例如`go get foo@v1.2.3`，`go get foo@master` (`foo@default`)，`go get foo@e3702bed2`。
+- 如果需要的话，可以在`go get`命令或在编辑`go.mod`文件的时候指明版本号，例如`go get foo@v1.2.3`，`go get foo@master` (`foo@default`)，`go get foo@e3702bed2`。
 
 其他你可能也经常会用到的功能也简单介绍一下：
 
@@ -131,7 +132,7 @@ require rsc.io/quote v1.5.2
 - 在`go.mod`中使用`replace`可以使用其他依赖路径，比如fork的仓库、本地的拷贝或精确的版本号（例如`replace example.com/project/foo => ../foo`）；（[详情](https://github.com/golang/go/wiki/Modules#when-should-i-use-the-replace-directive)）
 - `go mod vendor`一个可选的步骤，用于创建一个`vendor`路径。（[详情](https://github.com/golang/go/wiki/Modules#how-do-i-use-vendoring-with-modules-is-vendoring-going-away)）
 
-在你读完接下来的“新概念”中的四小节内容后，对于大部分项目你都有足够的信息使用Go Modules了。重新浏览目录也能帮助你更熟悉Go Modules的一些更细节的讨论。
+在你读完接下来的“新概念”中的四小节内容后，足够应付大部分项目了。重新浏览目录也能帮助你熟悉Go Modules的一些更细节的讨论。
 
 </div>
 </details>
@@ -143,3 +144,7 @@ require rsc.io/quote v1.5.2
 - [ ] 从最初的 Vgo 发布后做的改变
 - [ ] GitHub Issues
 - [ ] FAQs
+
+## 贡献
+
+提供相关翻译至`docs/`目录下即可，待校对完毕后，README由我来更新就好。
