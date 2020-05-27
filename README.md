@@ -137,7 +137,39 @@ require rsc.io/quote v1.5.2
 </div>
 </details>
 
-- [ ] 新概念
+<details>
+<summary><strong>新的概念</strong></summary>
+<div>
+
+## 新的概念
+
+接下来的几个小节将会详细介绍Go Modules的几个概念。更详细的细节请参考40分钟的介绍：[GopherCon Sg 2018](https://www.youtube.com/watch?v=F8nrpe0XWRg&list=PLq2Nv-Sh8EbbIjQgDzapOFeVfv5bGOoPE&index=3&t=0s)，[官方文档](https://golang.org/design/24301-versioned-go)或[最初的vgo系列](https://research.swtch.com/vgo)
+
+#### 模块
+
+一个模块（module）定义为一系列相关的Go包（package）的集合，这些包作为一个单一单元被版本化。（译注：Go package其实就是一个目录下的单个或多个`.go`文件组成的包。）
+
+模块记录了详细的依赖关系，且一个模块的构建过程也是可复现的。
+
+大多数情况下，一个有版本控制的代码仓库，其根目录下只会包含一个模块。（单仓库多模块也是支持的，但是相较于单仓库单模块，会导致更多的版本管理的工作）
+
+总结一下版本库（repo）、模块（module）和包（package）之间但关系：
+
+- 一个版本库包含一个或多个Go模块；
+- 每个模块包含一个或多个Go包；
+- 每个包由一个目录下的单个或多个`.go`文件组成。
+
+模块必须严格按照[semver](https://semver.org/)规范来打上有意义的版本号，通常情况下遵循格式`v(major).(minor).(patch)`，比如`v0.1.0`，`v1.2.3`，或者`v1.5.0-rc.1`。开头的`v`是必需的。如果使用Git，请在发布的时候用[tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging)标上版本号。公有库、私有库和镜像仓库都受到支持（见[下方](https://github.com/golang/go/wiki/Modules#are-there-always-on-module-repositories-and-enterprise-proxies)FAQ）
+
+#### go.mod
+
+#### 版本选择
+
+#### 有意义的版本号
+
+</div>
+</details>
+
 - [ ] 如何使用 Modules
 - [ ] 迁移到 Modules
 - [ ] 其他参考资料
